@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <title>JavaScript Hello World</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+
+<body onload="init()">
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<br>
+	<br>
+	<br>
+	<img id="drag1" src="dragdrop.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+ 	<canvas id="can" width="400" height="400" style="position:absolute;top:10%;left:10%;border:2px solid;"></canva>
+        <div style="position:absolute;top:12%;left:43%;">Choose Color</div>
+        <div style="position:absolute;top:15%;left:45%;width:10px;height:10px;background:green;" id="green" onclick="color(this)"></div>
+        <div style="position:absolute;top:15%;left:46%;width:10px;height:10px;background:blue;" id="blue" onclick="color(this)"></div>
+        <div style="position:absolute;top:15%;left:47%;width:10px;height:10px;background:red;" id="red" onclick="color(this)"></div>
+        <div style="position:absolute;top:17%;left:45%;width:10px;height:10px;background:yellow;" id="yellow" onclick="color(this)"></div>
+        <div style="position:absolute;top:17%;left:46%;width:10px;height:10px;background:orange;" id="orange" onclick="color(this)"></div>
+        <div style="position:absolute;top:17%;left:47%;width:10px;height:10px;background:black;" id="black" onclick="color(this)"></div>
+        <div style="position:absolute;top:20%;left:43%;">Eraser</div>
+        <div style="position:absolute;top:22%;left:45%;width:15px;height:15px;background:white;border:2px solid;" id="white" onclick="color(this)"></div>
+        <img id="canvasimg" style="position:absolute;top:10%;left:52%;" style="display:none;">
+        <input type="button" value="save" id="btn" size="30" onclick="save()" style="position:absolute;top:55%;left:10%;">
+        <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:55%;left:15%;">
+        <br>
+        <br>
+        <br>
+        <section>
+
+			<div>
+				<canvas id="canvas" width="300" height="200">
+				</canvas>
+			</div>
+		</section>
+</body>
+
+</html>
